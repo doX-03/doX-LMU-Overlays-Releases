@@ -1,0 +1,8 @@
+# Release payloads belong in GitHub Release assets, not in Git.
+*.zip
+*.exe
+
+# Local build and staging folders
+artifacts/
+staging/
+temp/
