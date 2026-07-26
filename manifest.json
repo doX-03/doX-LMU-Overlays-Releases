@@ -1,12 +1,15 @@
 {
   "schemaVersion": 1,
-  "version": "4.9.4",
-  "packageUrl": "https://github.com/doX-03/doX-LMU-Overlays-Releases/releases/download/v4.9.4/doX-update-4.9.4.zip",
-  "sha256": "2b50f33da81490c6d0e69225043e6ff310aa22e226ca2d5c28919e690fca9242",
-  "fileName": "doX-update-4.9.4.zip",
-  "releasePageUrl": "https://github.com/doX-03/doX-LMU-Overlays-Releases/releases/tag/v4.9.4",
-  "updateTitle": "Update",
-  "fullTitle": "4.9.4 - Update",
+  "version": "4.10.0",
+  "packageUrl": "https://github.com/doX-03/doX-LMU-Overlays-Releases/releases/download/v4.10.0/doX-update-4.10.0.zip",
+  "sha256": "98fac132204f0cbf491814893ccefc4701da3c97a2df1aea7536a92f94a75213",
+  "fileName": "doX-update-4.10.0.zip",
+  "releasePageUrl": "https://github.com/doX-03/doX-LMU-Overlays-Releases/releases/tag/v4.10.0",
+  "updateTitle": "Automatic Updater and Plugin Improvements",
+  "fullTitle": "4.10.0 - Automatic Updater and Plugin Improvements",
   "publishDiscord": true,
-  "changelog": []
+  "changelog": [
+    "Update packs directly from SimHub",
+    "Improved download verification and recovery"
+  ]
 }
