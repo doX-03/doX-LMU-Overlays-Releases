@@ -57,9 +57,10 @@ jobs:
             const publishDiscord = data.publishDiscord !== false;
             const updateTitle = String(data.updateTitle || "Update").trim();
             const fullTitle = String(data.fullTitle || `${version} - ${updateTitle}`).trim();
-            const defaultUpdatesUrl = "https://www.overtake.gg/downloads/dox-lmu-overlays-collection.79667/updates";
-            const updatesUrl = String(data.overtakeUpdatesUrl || data.downloadUrl || defaultUpdatesUrl).trim();
-            const postUrl = String(data.overtakeUrl || data.downloadUrl || updatesUrl).trim();
+            const releaseUrl = String(data.releasePageUrl || data.packageUrl || "").trim();
+            if (!releaseUrl) {
+              throw new Error(`Missing "releasePageUrl" or "packageUrl" in ${jsonFile}`);
+            }
             const lastPostedVersion = fs.existsSync(postedStateFile)
               ? fs.readFileSync(postedStateFile, "utf8").trim()
               : "";
@@ -79,7 +80,7 @@ jobs:
             const fields = [
               { name: "Version", value: version, inline: true },
               { name: "Update title", value: updateTitle, inline: false },
-              { name: "Download", value: updatesUrl, inline: false }
+              { name: "Download", value: releaseUrl, inline: false }
             ];
             if (Array.isArray(data.changelog) && data.changelog.length > 0) {
               fields.push({
@@ -99,7 +100,7 @@ jobs:
                 allowed_mentions: hasRoleMention ? { roles: [lappedCarRoleId] } : { parse: [] },
                 embeds: [{
                   title: fullTitle,
-                  url: postUrl,
+                  url: releaseUrl,
                   description: "A new version of doX LMU Overlays Collection is available.",
                   fields,
                   footer: { text: "doX LMU Overlays Collection" }

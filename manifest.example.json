@@ -5,7 +5,8 @@
   "sha256": "REPLACE_WITH_LOWERCASE_SHA256_OF_THE_ZIP",
   "fileName": "doX-update-4.9.4.zip",
   "releasePageUrl": "https://github.com/doX-03/doX-LMU-Overlays-Releases/releases/tag/v4.9.4",
-  "downloadUrl": "https://www.overtake.gg/downloads/dox-lmu-overlays-collection.79667/updates",
-  "overtakeUpdatesUrl": "https://www.overtake.gg/downloads/dox-lmu-overlays-collection.79667/updates",
-  "publishDiscord": true
+  "updateTitle": "Update title",
+  "fullTitle": "4.9.4 - Update title",
+  "publishDiscord": true,
+  "changelog": []
 }
