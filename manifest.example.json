@@ -1,8 +1,11 @@
 {
   "schemaVersion": 1,
-  "version": "1.12.4",
-  "packageUrl": "https://github.com/doX-03/doX-LMU-Overlays-Releases/releases/download/v1.12.4/doX-update-1.12.4.zip",
+  "version": "4.9.4",
+  "packageUrl": "https://github.com/doX-03/doX-LMU-Overlays-Releases/releases/download/v4.9.4/doX-update-4.9.4.zip",
   "sha256": "REPLACE_WITH_LOWERCASE_SHA256_OF_THE_ZIP",
-  "fileName": "doX-update-1.12.4.zip",
-  "releasePageUrl": "https://github.com/doX-03/doX-LMU-Overlays-Releases/releases/tag/v1.12.4"
+  "fileName": "doX-update-4.9.4.zip",
+  "releasePageUrl": "https://github.com/doX-03/doX-LMU-Overlays-Releases/releases/tag/v4.9.4",
+  "downloadUrl": "https://www.overtake.gg/downloads/dox-lmu-overlays-collection.79667/updates",
+  "overtakeUpdatesUrl": "https://www.overtake.gg/downloads/dox-lmu-overlays-collection.79667/updates",
+  "publishDiscord": true
 }
