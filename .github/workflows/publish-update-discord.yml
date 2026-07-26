@@ -1,0 +1,124 @@
+name: Publish update to Discord
+
+on:
+  push:
+    branches:
+      - main
+    paths:
+      - manifest.json
+  workflow_dispatch:
+    inputs:
+      force_post:
+        description: Post to Discord even if version did not change
+        required: false
+        default: "false"
+        type: choice
+        options:
+          - "false"
+          - "true"
+
+permissions:
+  contents: write
+
+jobs:
+  post-discord:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Read manifest and post Discord
+        env:
+          DISCORD_WEBHOOK_URL: ${{ secrets.DISCORD_UPDATES_WEBHOOK }}
+          FORCE_POST: ${{ inputs.force_post || 'false' }}
+        run: |
+          node <<'NODE'
+          (async () => {
+            const fs = require("fs");
+            const { execSync } = require("child_process");
+
+            const jsonFile = "manifest.json";
+            const postedStateFile = ".discord-last-posted-version";
+            const webhookUrl = process.env.DISCORD_WEBHOOK_URL || "";
+            const forcePost = process.env.FORCE_POST === "true";
+            const lappedCarRoleId = "1514766461468414122";
+
+            if (!fs.existsSync(jsonFile)) {
+              throw new Error(`Missing JSON file: ${jsonFile}`);
+            }
+
+            const data = JSON.parse(fs.readFileSync(jsonFile, "utf8"));
+            const version = String(data.version || "").trim();
+            if (!version) {
+              throw new Error(`Missing "version" in ${jsonFile}`);
+            }
+
+            const publishDiscord = data.publishDiscord !== false;
+            const updateTitle = String(data.updateTitle || "Update").trim();
+            const fullTitle = String(data.fullTitle || `${version} - ${updateTitle}`).trim();
+            const defaultUpdatesUrl = "https://www.overtake.gg/downloads/dox-lmu-overlays-collection.79667/updates";
+            const updatesUrl = String(data.overtakeUpdatesUrl || data.downloadUrl || defaultUpdatesUrl).trim();
+            const postUrl = String(data.overtakeUrl || data.downloadUrl || updatesUrl).trim();
+            const lastPostedVersion = fs.existsSync(postedStateFile)
+              ? fs.readFileSync(postedStateFile, "utf8").trim()
+              : "";
+
+            if (!publishDiscord) {
+              console.log("publishDiscord is false. Skipping Discord post.");
+              return;
+            }
+            if (lastPostedVersion === version && !forcePost) {
+              console.log("Version already posted. Skipping Discord post.");
+              return;
+            }
+            if (!webhookUrl) {
+              throw new Error("DISCORD_UPDATES_WEBHOOK secret is missing.");
+            }
+
+            const fields = [
+              { name: "Version", value: version, inline: true },
+              { name: "Update title", value: updateTitle, inline: false },
+              { name: "Download", value: updatesUrl, inline: false }
+            ];
+            if (Array.isArray(data.changelog) && data.changelog.length > 0) {
+              fields.push({
+                name: "Changelog",
+                value: data.changelog.slice(0, 10).map(item => `• ${String(item)}`).join("\n").slice(0, 1024),
+                inline: false
+              });
+            }
+
+            const hasRoleMention = lappedCarRoleId && lappedCarRoleId !== "COLE_AQUI_O_ID_DO_CARGO_LAPPED_CAR";
+            const discordResponse = await fetch(webhookUrl, {
+              method: "POST",
+              headers: { "Content-Type": "application/json" },
+              body: JSON.stringify({
+                username: "doX Updates",
+                content: hasRoleMention ? `<@&${lappedCarRoleId}>` : "",
+                allowed_mentions: hasRoleMention ? { roles: [lappedCarRoleId] } : { parse: [] },
+                embeds: [{
+                  title: fullTitle,
+                  url: postUrl,
+                  description: "A new version of doX LMU Overlays Collection is available.",
+                  fields,
+                  footer: { text: "doX LMU Overlays Collection" }
+                }]
+              })
+            });
+
+            if (!discordResponse.ok) {
+              throw new Error(`Discord webhook failed: ${discordResponse.status} ${await discordResponse.text()}`);
+            }
+
+            fs.writeFileSync(postedStateFile, `${version}\n`, "utf8");
+            execSync('git config user.name "doX Update Bot"');
+            execSync('git config user.email "actions@github.com"');
+            execSync(`git add ${postedStateFile}`);
+            execSync('git commit -m "Update Discord posted version"');
+            execSync("git push");
+          })().catch(error => {
+            console.error(error);
+            process.exit(1);
+          });
+          NODE
