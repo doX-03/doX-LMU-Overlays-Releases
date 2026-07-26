@@ -1,6 +1,11 @@
 name: Post update JSON to Discord
 
 on:
+  push:
+    branches:
+      - main
+    paths:
+      - manifest.json
   workflow_dispatch:
     inputs:
       force_post:
@@ -33,7 +38,7 @@ jobs:
             const fs = require("fs");
             const { execSync } = require("child_process");
 
-            const jsonFile = "doX-LMU-Overlays-setup.json";
+            const jsonFile = "manifest.json";
             const postedStateFile = ".discord-last-posted-version";
 
             const webhookUrl = process.env.DISCORD_WEBHOOK_URL || "";
@@ -62,19 +67,13 @@ jobs:
               `${version} - ${updateTitle}`
             ).trim();
 
-            const defaultUpdatesUrl = "https://www.overtake.gg/downloads/dox-lmu-overlays-collection.79667/updates";
-
-            const updatesUrl = String(
-              data.overtakeUpdatesUrl ||
-              data.downloadUrl ||
-              defaultUpdatesUrl
+            const releaseUrl = String(
+              data.releasePageUrl || data.packageUrl || ""
             ).trim();
 
-            const postUrl = String(
-              data.overtakeUrl ||
-              data.downloadUrl ||
-              updatesUrl
-            ).trim();
+            if (!releaseUrl) {
+              throw new Error(`Missing "releasePageUrl" or "packageUrl" in ${jsonFile}`);
+            }
 
             let lastPostedVersion = "";
 
@@ -121,7 +120,7 @@ jobs:
               },
               {
                 name: "Download",
-                value: updatesUrl,
+                value: releaseUrl,
                 inline: false
               }
             ];
@@ -147,7 +146,7 @@ jobs:
               embeds: [
                 {
                   title: fullTitle,
-                  url: postUrl,
+                  url: releaseUrl,
                   description: "A new version of doX LMU Overlays Collection is available.",
                   fields,
                   footer: {
