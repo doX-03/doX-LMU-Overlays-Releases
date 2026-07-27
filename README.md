@@ -1,36 +1,55 @@
 # doX LMU Overlays Releases
 
-Repositório público de distribuição do doX LMU Overlays. Ele não contém o
-código-fonte do plugin nem do updater.
+Public distribution repository for doX LMU Overlays automatic updates.
 
-O plugin consulta o `manifest.json` publicado na branch `main`. Quando houver
-uma versão nova, o manifesto aponta para um asset imutável de uma GitHub
-Release. Esse asset é um pacote ZIP com a DLL, os overlays e o updater.
+This repository does not contain the plugin source code or the normal installer
+EXE. It provides the published update package used by the doX plugin inside
+SimHub.
 
-## Estrutura de um pacote de atualização
+## How automatic updates work
+
+The plugin reads `manifest.json` from the `main` branch. When a newer pack
+version is available, the manifest points to an immutable ZIP asset in a
+GitHub Release.
+
+The active manifest contains:
+
+- The pack version.
+- The GitHub Release ZIP URL and SHA-256 checksum.
+- The release page URL.
+- Discord announcement text and the OverTake page URL used in Discord.
+
+`packageUrl` is used only by the automatic updater. `discordUrl` is used only
+by the Discord announcement and should point to the OverTake download page.
+
+## Update package layout
 
 ```text
-doX-update-<versão>.zip
-├── doX-Updater.exe
-├── doX.LMU_SessionDataPlugin.dll
-├── overlays/
-├── doX-LMU-Overlays.version
-└── manifest.json
+doX-update-<version>.zip
+|- package.json
+|- payload/
+|  |- doX.LMU_SessionDataPlugin.dll
+|  |- doX-LMU-Overlays.version
+|  `- DashTemplates/
+`- updater/
+   `- doX-PackUpdater.exe
 ```
 
-O `doX-Updater.exe` é extraído apenas para uma pasta temporária pelo plugin;
-ele não é instalado de forma permanente no SimHub nem é iniciado com o Windows.
+The updater is extracted to a temporary folder only when an update is applied.
+It is not permanently installed in SimHub and does not run with Windows.
 
-## Publicar uma versão
+## Publishing a pack update
 
-1. Monte o ZIP e calcule o SHA-256 dele.
-2. Crie uma GitHub Release com a tag `v<versão>` e envie o ZIP como asset.
-3. Atualize o `manifest.json` na branch `main` com a versão, URL do asset e
-   SHA-256.
-4. Só depois publique o commit do manifesto.
+1. Build the update ZIP from the `doX LMU Installer` repository.
+2. Create a GitHub Release with tag `v<version>`.
+3. Upload `doX-update-<version>.zip` to that release.
+4. Update `manifest.json` with the version, ZIP URL, SHA-256 checksum, release
+   URL, OverTake URL, and release notes.
+5. Commit the manifest after the release asset is available.
 
-O manifesto ativo deve sempre apontar para um asset já publicado. Use
-`manifest.example.json` como modelo.
+Updating `manifest.json` triggers the Discord workflow. To repeat an existing
+announcement, run **Post update JSON to Discord** manually with
+`force_post=true`.
 
-O OverTake continua sendo o canal oficial para apresentação, notas e download
-manual do pack.
+OverTake remains the official page for release notes and manual installer
+downloads.
