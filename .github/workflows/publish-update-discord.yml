@@ -67,12 +67,12 @@ jobs:
               `${version} - ${updateTitle}`
             ).trim();
 
-            const releaseUrl = String(
-              data.releasePageUrl || data.packageUrl || ""
+            const discordUrl = String(
+              data.discordUrl || data.releasePageUrl || data.packageUrl || ""
             ).trim();
 
-            if (!releaseUrl) {
-              throw new Error(`Missing "releasePageUrl" or "packageUrl" in ${jsonFile}`);
+            if (!discordUrl) {
+              throw new Error(`Missing "discordUrl", "releasePageUrl", or "packageUrl" in ${jsonFile}`);
             }
 
             let lastPostedVersion = "";
@@ -120,7 +120,7 @@ jobs:
               },
               {
                 name: "Download",
-                value: releaseUrl,
+                value: discordUrl,
                 inline: false
               }
             ];
@@ -146,7 +146,7 @@ jobs:
               embeds: [
                 {
                   title: fullTitle,
-                  url: releaseUrl,
+                  url: discordUrl,
                   description: "A new version of doX LMU Overlays Collection is available.",
                   fields,
                   footer: {
