@@ -1,10 +1,18 @@
-{
-    "schemaVersion":  1,
-    "version":  "4.10.2",
-    "packageUrl":  "https://github.com/doX-03/doX-LMU-Overlays-Releases/releases/download/v4.10.2/doX-update-4.10.2.zip",
-    "sha256":  "d426768bf38215c04207168f3a15379a97f47b9acb721b0d83eca4bd475da19a",
-    "fileName":  "doX-update-4.10.2.zip",
-    "releasePageUrl":  "https://github.com/doX-03/doX-LMU-Overlays-Releases/releases/tag/v4.10.2",
-    "discordUrl":  "https://www.overtake.gg/downloads/dox-lmu-overlays-collection.79667/updates",
-    "publishDiscord":  false
-}
+  {
+    "schemaVersion": 1,
+    "version": "4.10.2",
+    "packageUrl": "https://github.com/doX-03/doX-LMU-Overlays-Releases/releases/download/v4.10.2/doX-update-4.10.2.zip",
+    "sha256": "d426768bf38215c04207168f3a15379a97f47b9acb721b0d83eca4bd475da19a",
+    "fileName": "doX-update-4.10.2.zip",
+    "releasePageUrl": "https://github.com/doX-03/doX-LMU-Overlays-Releases/releases/tag/v4.10.2",
+    "discordUrl": "https://www.overtake.gg/downloads/dox-lmu-overlays-collection.79667/updates#resource-update-153919",
+    "updateTitle": "Update Improvements",
+    "fullTitle": "4.10.2 - Update Improvements",
+    "changelog": [
+      "Fixed player telemetry reliability after the LMU 1.4 update.",
+      "Improved Stint History stability and Virtual Energy recognition.",
+      "Added manual and automatic update checks."
+    ],
+    "publishDiscord": true
+  }
+
