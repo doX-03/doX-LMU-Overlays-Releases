@@ -1,18 +1,10 @@
 {
-  "schemaVersion": 1,
-  "version": "4.10.1",
-  "packageUrl": "https://github.com/doX-03/doX-LMU-Overlays-Releases/releases/download/v4.10.1/doX-update-4.10.1-fixed.zip",
-  "sha256": "f9f98fa74775eb323cf3c356bcacad16b1404afab91eaedccc327d9ad43394ac",
-  "fileName": "doX-update-4.10.1-fixed.zip",
-  "releasePageUrl": "https://github.com/doX-03/doX-LMU-Overlays-Releases/releases/tag/v4.10.1",
-  "discordUrl": "https://www.overtake.gg/downloads/dox-lmu-overlays-collection.79667/updates",
-  "updateTitle": "LMU 1.4 Compatibility Fixes",
-  "fullTitle": "4.10.1 - LMU 1.4 Compatibility Fixes",
-  "publishDiscord": false,
-  "changelog": [
-    "Fixed automatic updater package extraction",
-    "Fixed estimated lap timing and delta references",
-    "Fixed estimated total laps in the standings header",
-    "Updated plugin to doX.LMU_SessionDataPlugin v1.12.6"
-  ]
+    "schemaVersion":  1,
+    "version":  "4.10.2",
+    "packageUrl":  "https://github.com/doX-03/doX-LMU-Overlays-Releases/releases/download/v4.10.2/doX-update-4.10.2.zip",
+    "sha256":  "d426768bf38215c04207168f3a15379a97f47b9acb721b0d83eca4bd475da19a",
+    "fileName":  "doX-update-4.10.2.zip",
+    "releasePageUrl":  "https://github.com/doX-03/doX-LMU-Overlays-Releases/releases/tag/v4.10.2",
+    "discordUrl":  "https://www.overtake.gg/downloads/dox-lmu-overlays-collection.79667/updates",
+    "publishDiscord":  false
 }
