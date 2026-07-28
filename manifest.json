@@ -1,16 +1,17 @@
 {
   "schemaVersion": 1,
-  "version": "4.10.0",
-  "packageUrl": "https://github.com/doX-03/doX-LMU-Overlays-Releases/releases/download/v4.10.0/doX-update-4.10.0.zip",
-  "sha256": "98fac132204f0cbf491814893ccefc4701da3c97a2df1aea7536a92f94a75213",
-  "fileName": "doX-update-4.10.0.zip",
-  "releasePageUrl": "https://github.com/doX-03/doX-LMU-Overlays-Releases/releases/tag/v4.10.0",
+  "version": "4.10.1",
+  "packageUrl": "https://github.com/doX-03/doX-LMU-Overlays-Releases/releases/download/v4.10.1/doX-update-4.10.1.zip",
+  "sha256": "67bf7ef1a9091203d6b78087c62fcd1023bbe4201f1fd4912fb4b68a5fc13e0d",
+  "fileName": "doX-update-4.10.1.zip",
+  "releasePageUrl": "https://github.com/doX-03/doX-LMU-Overlays-Releases/releases/tag/v4.10.1",
   "discordUrl": "https://www.overtake.gg/downloads/dox-lmu-overlays-collection.79667/updates",
-  "updateTitle": "Automatic Updater and Plugin Improvements",
-  "fullTitle": "4.10.0 - Automatic Updater and Plugin Improvements",
+  "updateTitle": "LMU 1.4 Compatibility Fixes",
+  "fullTitle": "4.10.1 - LMU 1.4 Compatibility Fixes",
   "publishDiscord": true,
   "changelog": [
-    "Update packs directly from SimHub",
-    "Improved download verification and recovery"
+    "Fixed estimated lap timing and delta references",
+    "Fixed estimated total laps in the standings header",
+    "Updated plugin to doX.LMU_SessionDataPlugin v1.12.6"
   ]
 }
