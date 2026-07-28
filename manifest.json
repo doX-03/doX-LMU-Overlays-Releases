@@ -1,18 +1,17 @@
-  {
-    "schemaVersion": 1,
-    "version": "4.10.2",
-    "packageUrl": "https://github.com/doX-03/doX-LMU-Overlays-Releases/releases/download/v4.10.2/doX-update-4.10.2.zip",
-    "sha256": "d426768bf38215c04207168f3a15379a97f47b9acb721b0d83eca4bd475da19a",
-    "fileName": "doX-update-4.10.2.zip",
-    "releasePageUrl": "https://github.com/doX-03/doX-LMU-Overlays-Releases/releases/tag/v4.10.2",
-    "discordUrl": "https://www.overtake.gg/downloads/dox-lmu-overlays-collection.79667/updates#resource-update-153919",
-    "updateTitle": "Update Improvements",
-    "fullTitle": "4.10.2 - Update Improvements",
-    "changelog": [
-      "Fixed player telemetry reliability after the LMU 1.4 update.",
-      "Improved Stint History stability and Virtual Energy recognition.",
-      "Added manual and automatic update checks."
-    ],
-    "publishDiscord": true
-  }
-
+{
+  "schemaVersion": 1,
+  "version": "4.10.3",
+  "packageUrl": "https://github.com/doX-03/doX-LMU-Overlays-Releases/releases/download/v4.10.3/doX-update-4.10.3.zip",
+  "sha256": "28ba1b2bd75e987f5c516edb43e6183de87085a72f3858fabfb2276743698125",
+  "fileName": "doX-update-4.10.3.zip",
+  "releasePageUrl": "https://github.com/doX-03/doX-LMU-Overlays-Releases/releases/tag/v4.10.3",
+  "discordUrl": "https://www.overtake.gg/downloads/dox-lmu-overlays-collection.79667/updates",
+  "updateTitle": "Vehicle Data Quick Fix",
+  "fullTitle": "4.10.3 - Vehicle Data Quick Fix",
+  "changelog": [
+    "Fixed vehicle models and brands in Standings, Relative and Rivals.",
+    "Fixed incorrect yellow-flag status display for drivers.",
+    "Updated plugin to doX.LMU_SessionDataPlugin v1.12.8."
+  ],
+  "publishDiscord": false
+}
