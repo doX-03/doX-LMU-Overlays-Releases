@@ -13,5 +13,5 @@
     "Fixed incorrect yellow-flag status display for drivers.",
     "Updated plugin to doX.LMU_SessionDataPlugin v1.12.8."
   ],
-  "publishDiscord": false
+  "publishDiscord": true
 }
