@@ -2,14 +2,15 @@
   "schemaVersion": 1,
   "version": "4.10.1",
   "packageUrl": "https://github.com/doX-03/doX-LMU-Overlays-Releases/releases/download/v4.10.1/doX-update-4.10.1.zip",
-  "sha256": "67bf7ef1a9091203d6b78087c62fcd1023bbe4201f1fd4912fb4b68a5fc13e0d",
+  "sha256": "e38089c695acd1dc28ee7367d640b2c6c2f36d8280ffcb961ac3df40c78c9313",
   "fileName": "doX-update-4.10.1.zip",
   "releasePageUrl": "https://github.com/doX-03/doX-LMU-Overlays-Releases/releases/tag/v4.10.1",
   "discordUrl": "https://www.overtake.gg/downloads/dox-lmu-overlays-collection.79667/updates",
   "updateTitle": "LMU 1.4 Compatibility Fixes",
   "fullTitle": "4.10.1 - LMU 1.4 Compatibility Fixes",
-  "publishDiscord": true,
+  "publishDiscord": false,
   "changelog": [
+    "Fixed automatic updater package extraction",
     "Fixed estimated lap timing and delta references",
     "Fixed estimated total laps in the standings header",
     "Updated plugin to doX.LMU_SessionDataPlugin v1.12.6"
