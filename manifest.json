@@ -1,18 +1,16 @@
 {
     "schemaVersion":  1,
-    "version":  "4.10.4",
-    "packageUrl":  "https://github.com/doX-03/doX-LMU-Overlays-Releases/releases/download/v4.10.4/doX-update-4.10.4.zip",
-    "sha256":  "9f42d50ca6353b55dd5204036e094f476bd3633ac542c68ef8349cd5a89c8c22",
-    "fileName":  "doX-update-4.10.4.zip",
-    "releasePageUrl":  "https://github.com/doX-03/doX-LMU-Overlays-Releases/releases/tag/v4.10.4",
+    "version":  "4.10.5",
+    "packageUrl":  "https://github.com/doX-03/doX-LMU-Overlays-Releases/releases/download/v4.10.5/doX-update-4.10.5.zip",
+    "sha256":  "8c39618cb152e7475a1974eadfc9a53250b22f9d82c304e81677a96896bb53d0",
+    "fileName":  "doX-update-4.10.5.zip",
+    "releasePageUrl":  "https://github.com/doX-03/doX-LMU-Overlays-Releases/releases/tag/v4.10.5",
     "discordUrl":  "https://www.overtake.gg/downloads/dox-lmu-overlays-collection.79667/updates",
-    "updateTitle":  "Performance Controls & Timing Updates",
-    "fullTitle":  "4.10.4 - Performance Controls & Timing Updates",
-    "changelog":  [
-        "Added shared Trace Speed controls to General Performance and Inputs.",
-        "Added Total Laps visibility controls to Timing and Sectors.",
-        "Improved the in-app update prompt with one-click automatic updates.",
-        "Updated plugin to doX.LMU_SessionDataPlugin v1.12.9."
+    "updateTitle": "Automatic Updater Fix",
+    "fullTitle": "4.10.5 - Automatic Updater Fix",
+    "changelog": [
+        "Fixed automatic updates when SimHub does not close normally.",
+        "The updater now closes SimHub automatically and restarts it after the update."
     ],
     "publishDiscord":  false
 }
