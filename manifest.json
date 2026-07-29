@@ -12,5 +12,5 @@
         "Added a progress window for the automatic update installation.",
         "The updater now shows its current step and copy progress before restarting SimHub."
     ],
-    "publishDiscord":  false
+    "publishDiscord":  true
 }
