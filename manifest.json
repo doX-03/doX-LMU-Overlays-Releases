@@ -1,13 +1,13 @@
 {
     "schemaVersion":  1,
-    "version":  "4.10.6",
-    "packageUrl":  "https://github.com/doX-03/doX-LMU-Overlays-Releases/releases/download/v4.10.6/doX-update-4.10.6.zip",
-    "sha256":  "c1e1a215578e66c28a084779df5acf52b33cf9dacc820f1d2828638fc9c00380",
-    "fileName":  "doX-update-4.10.6.zip",
-    "releasePageUrl":  "https://github.com/doX-03/doX-LMU-Overlays-Releases/releases/tag/v4.10.6",
+    "version":  "4.10.7",
+    "packageUrl":  "https://github.com/doX-03/doX-LMU-Overlays-Releases/releases/download/v4.10.7/doX-update-4.10.7.zip",
+    "sha256":  "6f597758e407577f22b1a36db9438090bfc9b76aa52689e49c615e3e7a3abc77",
+    "fileName":  "doX-update-4.10.7.zip",
+    "releasePageUrl":  "https://github.com/doX-03/doX-LMU-Overlays-Releases/releases/tag/v4.10.7",
     "discordUrl":  "https://www.overtake.gg/downloads/dox-lmu-overlays-collection.79667/updates",
     "updateTitle": "Updater Progress Window",
-    "fullTitle": "4.10.6 - Updater Progress Window",
+    "fullTitle": "4.10.7 - Updater Progress Window",
     "changelog": [
         "Added a progress window for the automatic update installation.",
         "The updater now shows its current step and copy progress before restarting SimHub."
