@@ -7,11 +7,9 @@
   "releasePageUrl": "https://github.com/doX-03/doX-LMU-Overlays-Releases/releases/tag/v4.11.2",
   "discordUrl": "https://www.overtake.gg/downloads/dox-lmu-overlays-collection.79667/updates",
   "updateTitle": "LMU HUD, Virtual Energy and Fuel Ratio Fixes",
-  "fullTitle": "4.11.2 - LMU HUD, Virtual Energy and Fuel Ratio Fixes",
+  "fullTitle": "4.11.2 - Estimated Total Laps",
   "changelog": [
     "Fixed Estimated Total Laps after the latest LMU update.",
-    "Virtual Energy now displays 100% cleanly in Standings, Relative and Rivals.",
-    "Fuel Companion ratio colour: matching displayed ratio green, 0.01 orange, larger deviations red."
   ],
-  "publishDiscord": false
+  "publishDiscord": true
 }
