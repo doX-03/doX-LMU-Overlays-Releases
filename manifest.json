@@ -11,5 +11,5 @@
   "changelog": [
     "Yellow Spotter now ignores vehicles in the pit lane and garage."
   ],
-  "publishDiscord": false
+  "publishDiscord": true
 }
