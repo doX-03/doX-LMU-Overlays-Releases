@@ -1,19 +1,15 @@
 {
   "schemaVersion": 1,
-  "version": "4.11.0",
-  "packageUrl": "https://github.com/doX-03/doX-LMU-Overlays-Releases/releases/download/v4.11.0/doX-update-4.11.0.zip",
-  "sha256": "894a1f8b3cbac5abcea2b0603ccd6a8db068a39bcc98186cf364c522cdf56c00",
-  "fileName": "doX-update-4.11.0.zip",
-  "releasePageUrl": "https://github.com/doX-03/doX-LMU-Overlays-Releases/releases/tag/v4.11.0",
+  "version": "4.11.1",
+  "packageUrl": "https://github.com/doX-03/doX-LMU-Overlays-Releases/releases/download/v4.11.1/doX-update-4.11.1.zip",
+  "sha256": "a7e034e8a8539cc9dc0637a90a84c1f05ffd8640ceb007bc66e18c0d5d56406f",
+  "fileName": "doX-update-4.11.1.zip",
+  "releasePageUrl": "https://github.com/doX-03/doX-LMU-Overlays-Releases/releases/tag/v4.11.1",
   "discordUrl": "https://www.overtake.gg/downloads/dox-lmu-overlays-collection.79667/updates",
-  "updateTitle": "Yellow Spotter and Smarter Race Tools",
-  "fullTitle": "4.11.0 - Yellow Spotter and Smarter Race Tools",
+  "updateTitle": "Yellow Spotter Pit Lane Fix",
+  "fullTitle": "4.11.1 - Yellow Spotter Pit Lane Fix",
   "changelog": [
-    "Added the new Yellow Spotter overlay, showing whether a stopped car ahead is on the left, right or directly ahead.",
-    "Improved the Rejoin overlay with WAIT, CARE and CLEAR alerts, smoother distance-based colour transitions and clearer traffic guidance.",
-    "Fuel Companion: Ratio now displays the fuel ratio set in the LMU pit menu.",
-    "Fuel Companion: fuel-gap calculation is now independent from the refuel safety margin.",
-    "Added a Virtual Energy option to choose decimal or whole-number values in Relative, Rivals and Multiclass Standings."
+    "Yellow Spotter now ignores vehicles in the pit lane and garage."
   ],
-  "publishDiscord": true
+  "publishDiscord": false
 }
