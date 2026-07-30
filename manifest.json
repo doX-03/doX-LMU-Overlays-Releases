@@ -1,15 +1,16 @@
-  {
-    "schemaVersion": 1,
-    "version": "4.11.2",
-    "packageUrl": "https://github.com/doX-03/doX-LMU-Overlays-Releases/releases/download/v4.11.2/doX-update-4.11.2.zip",
-    "sha256": "76b65cae84a7525ac86610c82ce5203b5f2ada5257163b72ec449f05ef2b1400",
-    "fileName": "doX-update-4.11.2.zip",
-    "releasePageUrl": "https://github.com/doX-03/doX-LMU-Overlays-Releases/releases/tag/v4.11.2",
-    "discordUrl": "https://www.overtake.gg/downloads/dox-lmu-overlays-collection.79667/updates",
-    "updateTitle": "LMU HUD, Virtual Energy and Fuel Ratio Fixes",
-    "fullTitle": "4.11.2 - Estimated Total Laps",
-    "changelog": [
-      "Fixed Estimated Total Laps after the latest LMU update."
-    ],
-    "publishDiscord": true
-  }
+{
+  "schemaVersion": 1,
+  "version": "4.11.3",
+  "packageUrl": "https://github.com/doX-03/doX-LMU-Overlays-Releases/releases/download/v4.11.3/doX-update-4.11.3.zip",
+  "sha256": "f40ea4990114f147bea8c68ab0cdad1946be89f885c97008f3710751fc282799",
+  "fileName": "doX-update-4.11.3.zip",
+  "releasePageUrl": "https://github.com/doX-03/doX-LMU-Overlays-Releases/releases/tag/v4.11.3",
+  "discordUrl": "https://www.overtake.gg/downloads/dox-lmu-overlays-collection.79667/updates",
+  "updateTitle": "Incident Tracking and Yellow Spotter Fixes",
+  "fullTitle": "4.11.3 - Incident Tracking and Yellow Spotter Fixes",
+  "changelog": [
+    "Added race-entry incident tracking for standings, relative, and rivals.",
+    "Improved Yellow Spotter stability and left/right track positioning."
+  ],
+  "publishDiscord": false
+}
