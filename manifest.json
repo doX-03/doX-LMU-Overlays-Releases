@@ -6,5 +6,14 @@
   "fileName": "doX-update-4.11.0.zip",
   "releasePageUrl": "https://github.com/doX-03/doX-LMU-Overlays-Releases/releases/tag/v4.11.0",
   "discordUrl": "https://www.overtake.gg/downloads/dox-lmu-overlays-collection.79667/updates",
-  "publishDiscord": true
+  "updateTitle": "Yellow Spotter and Smarter Race Tools",
+  "fullTitle": "4.11.0 - Yellow Spotter and Smarter Race Tools",
+  "changelog": [
+    "Added the new Yellow Spotter overlay, showing whether a stopped car ahead is on the left, right or directly ahead.",
+    "Improved the Rejoin overlay with WAIT, CARE and CLEAR alerts, smoother distance-based colour transitions and clearer traffic guidance.",
+    "Fuel Companion: F. Ratio now displays the fuel ratio set in the LMU pit menu.",
+    "Fuel Companion: fuel-gap calculation is now independent from the refuel safety margin.",
+    "Added a Virtual Energy option to choose decimal or whole-number values in Relative, Rivals and Multiclass Standings."
+  ],
+  "publishDiscord": false
 }
