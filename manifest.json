@@ -15,5 +15,5 @@
     "Fuel Companion: fuel-gap calculation is now independent from the refuel safety margin.",
     "Added a Virtual Energy option to choose decimal or whole-number values in Relative, Rivals and Multiclass Standings."
   ],
-  "publishDiscord": false
+  "publishDiscord": true
 }
