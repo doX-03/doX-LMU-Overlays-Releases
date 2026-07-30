@@ -10,6 +10,6 @@
   "fullTitle": "4.11.2 - Estimated Total Laps",
   "changelog": [
     "Fixed Estimated Total Laps after the latest LMU update.",
-  ],
+  ]
   "publishDiscord": true
 }
