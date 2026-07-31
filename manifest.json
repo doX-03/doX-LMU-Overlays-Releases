@@ -12,5 +12,5 @@
     "Added race-only incident columns to standings, relative, and rivals.",
     "Added a settings search that filters the menu to matching controls."
   ],
-  "publishDiscord": false
+  "publishDiscord": true
 }
