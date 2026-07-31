@@ -1,16 +1,16 @@
 {
   "schemaVersion": 1,
-  "version": "4.12.0",
-  "packageUrl": "https://github.com/doX-03/doX-LMU-Overlays-Releases/releases/download/v4.12.0/doX-update-4.12.0.zip",
-  "sha256": "f63889f34cd2f88a3603b20004e887bfda797a3b81d6b4a4a56fb219bc5c131e",
-  "fileName": "doX-update-4.12.0.zip",
-  "releasePageUrl": "https://github.com/doX-03/doX-LMU-Overlays-Releases/releases/tag/v4.12.0",
+  "version": "4.12.1",
+  "packageUrl": "https://github.com/doX-03/doX-LMU-Overlays-Releases/releases/download/v4.12.1/doX-update-4.12.1.zip",
+  "sha256": "c913137d50eb47b5a6136f8727caca9b1115346708eb3e7e664f2c50e988d96d",
+  "fileName": "doX-update-4.12.1.zip",
+  "releasePageUrl": "https://github.com/doX-03/doX-LMU-Overlays-Releases/releases/tag/v4.12.1",
   "discordUrl": "https://www.overtake.gg/downloads/dox-lmu-overlays-collection.79667/updates",
-  "updateTitle": "Incidents, Smarter Settings Search and Overlay Refinements",
-  "fullTitle": "4.12.0 - Incidents, Smarter Settings Search and Overlay Refinements",
+  "updateTitle": "Estimated Total Laps and Layout Fixes",
+  "fullTitle": "4.12.1 - Estimated Total Laps and Layout Fixes",
   "changelog": [
-    "Added race-only incident columns to standings, relative, and rivals.",
-    "Added a settings search that filters the menu to matching controls."
+    "Restored HUD Estimated Total Laps after the latest LMU hotfix.",
+    "Fixed fallback Estimated Total Laps progression and status-card layout behavior."
   ],
-  "publishDiscord": true
+  "publishDiscord": false
 }
