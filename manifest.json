@@ -12,5 +12,5 @@
     "Restored HUD Estimated Total Laps after the latest LMU hotfix.",
     "Fixed fallback Estimated Total Laps progression and status-card layout behavior."
   ],
-  "publishDiscord": false
+  "publishDiscord": true
 }
