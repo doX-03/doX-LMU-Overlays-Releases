@@ -2,7 +2,7 @@
   "schemaVersion": 1,
   "version": "4.13.0",
   "packageUrl": "https://github.com/doX-03/doX-LMU-Overlays-Releases/releases/download/v4.13.0/doX-update-4.13.0.zip",
-  "sha256": "e2ff696656c091ae628c41aca7ce72dc9a89b0d9a9dbe23a661efc9c92b15dc1",
+  "sha256": "1464082a6deeeee3f4581f7220b215730c03dd5469b99e5596a5c50d95432e3f",
   "fileName": "doX-update-4.13.0.zip",
   "releasePageUrl": "https://github.com/doX-03/doX-LMU-Overlays-Releases/releases/tag/v4.13.0",
   "discordUrl": "https://www.overtake.gg/downloads/dox-lmu-overlays-collection.79667/updates",
@@ -12,5 +12,5 @@
     "Added Spectator Mode support for Standings, Relative and Track Map.",
     "Added the in-plugin Overlay Guide and improved damage, Relative and Estimated Total Laps behaviour."
   ],
-  "publishDiscord": true
+  "publishDiscord": false
 }
