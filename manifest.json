@@ -1,16 +1,17 @@
 {
   "schemaVersion": 1,
-  "version": "4.11.3",
-  "packageUrl": "https://github.com/doX-03/doX-LMU-Overlays-Releases/releases/download/v4.11.3/doX-update-4.11.3.zip",
-  "sha256": "f40ea4990114f147bea8c68ab0cdad1946be89f885c97008f3710751fc282799",
-  "fileName": "doX-update-4.11.3.zip",
-  "releasePageUrl": "https://github.com/doX-03/doX-LMU-Overlays-Releases/releases/tag/v4.11.3",
+  "version": "4.12.0",
+  "packageUrl": "https://github.com/doX-03/doX-LMU-Overlays-Releases/releases/download/v4.12.0/doX-update-4.12.0.zip",
+  "sha256": "bc2ed39b5eeddad06334e0c211a94c54e9cbe9417cfca8434b95a4800a1811e5",
+  "fileName": "doX-update-4.12.0.zip",
+  "releasePageUrl": "https://github.com/doX-03/doX-LMU-Overlays-Releases/releases/tag/v4.12.0",
   "discordUrl": "https://www.overtake.gg/downloads/dox-lmu-overlays-collection.79667/updates",
-  "updateTitle": "Incident Tracking and Yellow Spotter Fixes",
-  "fullTitle": "4.11.3 - Incident Tracking and Yellow Spotter Fixes",
+  "updateTitle": "Incidents, Smarter Settings Search and Overlay Refinements",
+  "fullTitle": "4.12.0 - Incidents, Smarter Settings Search and Overlay Refinements",
   "changelog": [
-    "Added race-entry incident tracking for standings, relative, and rivals.",
-    "Improved Yellow Spotter stability and left/right track positioning."
+    "Added race-only incident columns to standings, relative, and rivals.",
+    "Added a settings search that filters the menu to matching controls."
   ],
   "publishDiscord": false
 }
+
