@@ -12,5 +12,5 @@
     "Added Spectator Mode support for Standings, Relative and Track Map.",
     "Added the in-plugin Overlay Guide and improved damage, Relative and Estimated Total Laps behaviour."
   ],
-  "publishDiscord": false
+  "publishDiscord": true
 }
