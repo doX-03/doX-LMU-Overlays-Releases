@@ -1,16 +1,15 @@
 {
   "schemaVersion": 1,
-  "version": "4.13.0",
-  "packageUrl": "https://github.com/doX-03/doX-LMU-Overlays-Releases/releases/download/v4.13.0/doX-update-4.13.0.zip",
-  "sha256": "1464082a6deeeee3f4581f7220b215730c03dd5469b99e5596a5c50d95432e3f",
-  "fileName": "doX-update-4.13.0.zip",
-  "releasePageUrl": "https://github.com/doX-03/doX-LMU-Overlays-Releases/releases/tag/v4.13.0",
+  "version": "4.13.1",
+  "packageUrl": "https://github.com/doX-03/doX-LMU-Overlays-Releases/releases/download/v4.13.1/doX-update-4.13.1.zip",
+  "sha256": "c3fe4da4773bd09d720eddf1a89b5213a2c0354ceadd391cdf10dabf669fc6d9",
+  "fileName": "doX-update-4.13.1.zip",
+  "releasePageUrl": "https://github.com/doX-03/doX-LMU-Overlays-Releases/releases/tag/v4.13.1",
   "discordUrl": "https://www.overtake.gg/downloads/dox-lmu-overlays-collection.79667/updates",
-  "updateTitle": "Spectator Mode & Overlay Guide",
-  "fullTitle": "4.13.0 - Spectator Mode & Overlay Guide",
+  "updateTitle": "Fuel Companion Display Refinement",
+  "fullTitle": "4.13.1 - Fuel Companion Display Refinement",
   "changelog": [
-    "Added Spectator Mode support for Standings, Relative and Track Map.",
-    "Added the in-plugin Overlay Guide and improved damage, Relative and Estimated Total Laps behaviour."
+    "Refined Fuel Companion gap display for vehicles using Virtual Energy."
   ],
   "publishDiscord": false
 }
