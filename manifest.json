@@ -1,15 +1,15 @@
 {
   "schemaVersion": 1,
-  "version": "4.13.1",
-  "packageUrl": "https://github.com/doX-03/doX-LMU-Overlays-Releases/releases/download/v4.13.1/doX-update-4.13.1.zip",
-  "sha256": "c3fe4da4773bd09d720eddf1a89b5213a2c0354ceadd391cdf10dabf669fc6d9",
-  "fileName": "doX-update-4.13.1.zip",
-  "releasePageUrl": "https://github.com/doX-03/doX-LMU-Overlays-Releases/releases/tag/v4.13.1",
+  "version": "4.13.2",
+  "packageUrl": "https://github.com/doX-03/doX-LMU-Overlays-Releases/releases/download/v4.13.2/doX-update-4.13.2.zip",
+  "sha256": "a04db8ebb8c72c4366541510879bc4978fa191ca07997a4ec52ef7923eab8adf",
+  "fileName": "doX-update-4.13.2.zip",
+  "releasePageUrl": "https://github.com/doX-03/doX-LMU-Overlays-Releases/releases/tag/v4.13.2",
   "discordUrl": "https://www.overtake.gg/downloads/dox-lmu-overlays-collection.79667/updates",
-  "updateTitle": "Fuel Companion Display Refinement",
-  "fullTitle": "4.13.1 - Fuel Companion Display Refinement",
+  "updateTitle": "Updater Cleanup Fix",
+  "fullTitle": "4.13.2 - Updater Cleanup Fix",
   "changelog": [
-    "Refined Fuel Companion gap display for vehicles using Virtual Energy."
+    "Fixed automatic removal of the obsolete Session Infos sample.js file."
   ],
   "publishDiscord": false
 }
