@@ -1,15 +1,15 @@
 {
   "schemaVersion": 1,
-  "version": "4.13.2",
-  "packageUrl": "https://github.com/doX-03/doX-LMU-Overlays-Releases/releases/download/v4.13.2/doX-update-4.13.2.zip",
-  "sha256": "a04db8ebb8c72c4366541510879bc4978fa191ca07997a4ec52ef7923eab8adf",
-  "fileName": "doX-update-4.13.2.zip",
-  "releasePageUrl": "https://github.com/doX-03/doX-LMU-Overlays-Releases/releases/tag/v4.13.2",
+  "version": "4.13.3",
+  "packageUrl": "https://github.com/doX-03/doX-LMU-Overlays-Releases/releases/download/v4.13.3/doX-update-4.13.3.zip",
+  "sha256": "fa9ab45707dc1028596f47f78fccedb8c52157304e595ccbff6bd915f43bc661",
+  "fileName": "doX-update-4.13.3.zip",
+  "releasePageUrl": "https://github.com/doX-03/doX-LMU-Overlays-Releases/releases/tag/v4.13.3",
   "discordUrl": "https://www.overtake.gg/downloads/dox-lmu-overlays-collection.79667/updates",
-  "updateTitle": "Updater Cleanup Fix",
-  "fullTitle": "4.13.2 - Updater Cleanup Fix",
+  "updateTitle": "Driver Rank data update",
+  "fullTitle": "4.13.3 - Driver Rank data update",
   "changelog": [
-    "Fixed automatic removal of the obsolete Session Infos sample.js file."
+    "Restored current Driver Rank, Safety Rank, country and badge data after the LMU 1.4 update."
   ],
   "publishDiscord": false
 }
