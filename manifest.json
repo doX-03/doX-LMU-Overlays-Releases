@@ -11,5 +11,5 @@
   "changelog": [
     "Restored current Driver Rank, Safety Rank, country and badge data after the LMU 1.4 update."
   ],
-  "publishDiscord": false
+  "publishDiscord": true
 }
