@@ -1,15 +1,15 @@
 {
   "schemaVersion": 1,
-  "version": "4.13.3",
-  "packageUrl": "https://github.com/doX-03/doX-LMU-Overlays-Releases/releases/download/v4.13.3/doX-update-4.13.3.zip",
-  "sha256": "fa9ab45707dc1028596f47f78fccedb8c52157304e595ccbff6bd915f43bc661",
-  "fileName": "doX-update-4.13.3.zip",
-  "releasePageUrl": "https://github.com/doX-03/doX-LMU-Overlays-Releases/releases/tag/v4.13.3",
+  "version": "4.13.4",
+  "packageUrl": "https://github.com/doX-03/doX-LMU-Overlays-Releases/releases/download/v4.13.4/doX-update-4.13.4.zip",
+  "sha256": "ce2db76f95063cedde757ecbd62a30fbb2c1e88fef6fdaccc6270f1c53ad09ba",
+  "fileName": "doX-update-4.13.4.zip",
+  "releasePageUrl": "https://github.com/doX-03/doX-LMU-Overlays-Releases/releases/tag/v4.13.4",
   "discordUrl": "https://www.overtake.gg/downloads/dox-lmu-overlays-collection.79667/updates",
-  "updateTitle": "Driver Rank data update",
-  "fullTitle": "4.13.3 - Driver Rank data update",
+  "updateTitle": "Update reliability fix",
+  "fullTitle": "4.13.4 - Update reliability fix",
   "changelog": [
-    "Restored current Driver Rank, Safety Rank, country and badge data after the LMU 1.4 update."
+    "Fixes an update issue that could affect some installations."
   ],
-  "publishDiscord": true
+  "publishDiscord": false
 }
